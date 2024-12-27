@@ -61,6 +61,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
+New thing I included here is the use of 'sass'. I have lightly dabbled with it in the past but this time I delved deeper into learning and implementing it. Resources I used are https://www.youtube.com/watch?v=owpTAMP7gD8&t=2s funny coder for a beautiful introduction on how I can benifit from using sass. Then a deeper dive with coder coder's instructional video at https://www.youtube.com/watch?v=jfMHA8SqUL4&t=3000s.  
+
+
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:

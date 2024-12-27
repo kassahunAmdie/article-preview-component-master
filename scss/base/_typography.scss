@@ -1,0 +1,48 @@
+@use "../utilities" as u;
+
+//base font
+$font: "Manrope", sans-serif;
+
+//font-size
+$fs-100: 0.8125rem;
+$fs-200: 1rem;
+$fs-300: 1.25rem;
+
+//font-weight
+$fw-medium: 500;
+$fw-bold: 700;
+
+body {
+  font-family: $font;
+  font-size: $fs-100;
+  font-weight: $fw-medium;
+  line-height: 1.54;
+  letter-spacing: 0.12px;
+  color: var(--cl-dark-blue);
+  background-color: var(--cl-light-grayish-blue);
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-weight:$fw-bold;
+  color: var(--cl-dark-grayish-blue);
+}
+
+h1 {
+  font-size: $fs-200;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+
+  @include u.breakpoint(small){
+    font-size: $fs-300;
+    line-height: 1.4;
+  }
+}
+
+h2 {
+  font-size: $fs-100;
+}
+
+a {
+  text-decoration: none;
+}

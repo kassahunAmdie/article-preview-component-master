@@ -1,0 +1,37 @@
+// @use '../utilities' as u;
+
+/*
+  Josh's Custom CSS Reset with small change
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+html, body {
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* End CSS reset */
+
+
+

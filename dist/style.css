@@ -1,0 +1,206 @@
+:root {
+  --cl-light-grayish-blue: hsl(210, 46%, 95%);
+  --cl-dark-grayish-blue: hsl(217, 19%, 35%);
+  --cl-dark-blue: hsl(214, 17%, 51%);
+  --cl-grayish-blue: hsl(212, 23%, 69%);
+  --cl-white: hsl(0, 0%, 100%);
+}
+
+/*
+  Josh's Custom CSS Reset with small change
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+html, body {
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* End CSS reset */
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.54;
+  letter-spacing: 0.12px;
+  color: var(--cl-dark-blue);
+  background-color: var(--cl-light-grayish-blue);
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: var(--cl-dark-grayish-blue);
+}
+
+h1 {
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+}
+@media (min-width: 40.625em) {
+  h1 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+h2 {
+  font-size: 0.8125rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.no-wrap {
+  white-space: nowrap;
+  font-size: 0.8125rem;
+  color: var(--cl-grayish-blue);
+}
+
+span {
+  display: block;
+}
+
+.container {
+  container-type: inline-size;
+}
+
+@container (width < 650px) {
+  .card {
+    max-width: 385px;
+  }
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 36px;
+  width: min(100% - 48px, 730px);
+  margin-inline: auto;
+  margin-block-start: 74px;
+  margin-block-end: 81px;
+  background-color: var(--cl-white);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card__content-wrapper {
+  padding-inline: 32px;
+  display: grid;
+  row-gap: 32px;
+}
+@media (min-width: 40.625em) {
+  .card__content-wrapper {
+    padding-inline: 40px;
+    padding-block: 32px;
+    gap: 20px;
+  }
+}
+.card__image {
+  width: 100%;
+  height: 200px;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+}
+@media (min-width: 40.625em) {
+  .card__image img {
+    object-position: left;
+  }
+}
+@media (min-width: 40.625em) {
+  .card__image {
+    height: 100%;
+  }
+}
+.card__content {
+  display: grid;
+  gap: 12px;
+}
+@media (min-width: 40.625em) {
+  .card {
+    grid-template-columns: 285px 1fr;
+  }
+  .card {
+    margin-block: 260px;
+  }
+}
+
+.author-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 40.625em) {
+  .author-profile {
+    margin-bottom: 0;
+  }
+}
+.author-profile__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.author-profile__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.author-profile__image img {
+  border-radius: 50%;
+}
+.author-profile__name :is(span) {
+  font-weight: 500;
+}
+
+.profile__share-text {
+  display: none;
+}
+
+.profile__share {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--cl-light-grayish-blue);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+.footer {
+  position: sticky;
+  top: 100vh;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
