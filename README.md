@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/kassahunAmdie/article-preview-component-master](https://your-solution-url.com)
+- Live Site URL: [https://kassahunamdie.github.io/article-preview-component-master/](https://your-live-site-url.com)
 
 ## My process
 
