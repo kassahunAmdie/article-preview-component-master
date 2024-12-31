@@ -1,11 +1,48 @@
 @use '../base' as *;
+@use '../utilities' as u;
 
-// Utilities
+/* Utilities */
 
 .no-wrap {
+  display: block;
   white-space: nowrap;
   font-size: $fs-100;
   color: var(--cl-grayish-blue);
 }
 
-span {display: block}
+.display-none {
+  display: none;
+}
+
+.author-profile__share {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--cl-light-grayish-blue);
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: auto;
+
+    &--active {
+      background-color: var(--cl-dark-blue);
+    }
+}
+.white-icon {
+  filter: invert(1) brightness(2);
+}
+
+@include u.breakpoint(small){
+  .box {
+    width: 17px;
+    height: 17px;
+    background-color: var(--cl-dark-grayish-blue);
+    position: absolute;
+    left: 114px;
+    bottom: -9px;
+    transform: rotate(45deg);
+  }
+}
+
+/* End Utilities */

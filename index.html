@@ -43,9 +43,29 @@
             <h2 class="author-profile__name">Michelle Appleton <span class="no-wrap">28 Jun 2020</span></h2>
           </div>
         </div>
-        <p class="profile__share-text">Share</p>
-        <div class="profile__share">
-          <img src="./images/icon-share.svg" alt="Share Icon">
+        <div class="author-profile__share" id="share">
+          <img class="author-profile__img" src="./images/icon-share.svg" alt="Share Icon">
+        </div>
+        <!-- Active state -->
+        <div class="author-profile--active display-none">
+          <div class="author-profile--active__wrapper">
+            <p class="author-profile--active__text-item">Share</p>
+            <div class="author-profile--active__link-items">
+              <div class="author-profile--active__item">
+                <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook Icon"></a>
+              </div>
+              <div class="author-profile--active__item">
+                <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter Icon"></a>
+              </div>
+              <div class="author-profile--active__item">
+                <a href="#"><img src="./images/icon-pinterest.svg" alt="Pinterest Icon"></a>
+              </div>
+            </div>
+            <div class="author-profile__share author-profile__share--active" id="mobile-share">
+              <img class="author-profile__img white-icon" src="./images/icon-share.svg" alt="Share Icon">
+            </div>
+          </div>
+          <div class="box"></div>
         </div>
       </div>
       </div>
@@ -58,5 +78,6 @@
       Coded by <a href="#">Kassahun A Aboneh</a>.
     </div>
   </footer>
+  <script src="dist/script.js"></script>
 </body>
 </html>

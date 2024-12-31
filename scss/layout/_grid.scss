@@ -21,12 +21,13 @@
   margin-block-end: 81px;
   background-color: var(--cl-white);
   border-radius: 8px;
-  overflow: hidden;
+  box-shadow: 6px 9px 18px -2px #DCE4ED;
 
   &__content-wrapper {
     padding-inline: 32px;
     display: grid;
     row-gap: 32px;
+    position: relative;
 
     @include u.breakpoint(small){
       padding-inline: 40px;
@@ -43,9 +44,11 @@
       height: 100%;
       object-fit: cover;
       object-position: center 25%;
+      border-radius: 8px 8px 0 0;
 
       @include u.breakpoint(small){
         object-position: left;
+        border-radius: 8px 0 0 8px;
       }
     }
 
@@ -98,18 +101,71 @@
   &__name :is(span) {
     font-weight: $fw-medium;
   }
+  
+  // &__share {
+  //   width: 32px;
+  //   height: 32px;
+  //   border-radius: 50%;
+  //   background-color: var(--cl-light-grayish-blue);
+  //   display: flex; 
+  //   align-items: center;
+  //   justify-content: center;
+  //   cursor: pointer;
+  //   margin-left: auto;
+  // }
 }
 
-.profile__share-text {
-  display: none;
-}
 
-.profile__share {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: var(--cl-light-grayish-blue);
-  display: grid;
-  align-content: center;
-  justify-items: center;
+/* Active state */
+
+.author-profile--active {
+  background-color: var(--cl-dark-grayish-blue);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+
+  @include u.breakpoint(small){
+    left: clamp(5.625rem, -25.462rem + 76.522vw, 16.625rem);
+    bottom: 97px;
+    max-width: 248px;
+    border-radius: 8px;
   }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    padding-inline: 32px;
+    padding-block: 16px;
+
+    @include u.breakpoint(small){
+      padding-inline: 37px;
+      padding-block: 18px;
+    }
+  }
+
+  &__text-item {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--cl-grayish-blue);
+  }
+
+  &__link-items {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+    @include u.breakpoint(small){
+      .author-profile__share {
+        display: none;
+      }
+    }
+
+  
+}
+
+
+/* End Active state */
